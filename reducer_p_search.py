@@ -33,5 +33,5 @@ for line in sys.stdin:
 # Print out User Id, word and posts
 for user in userIndex:
     for word in userIndex[user]:
-        print user, "/t", word, "/t", userIndex[user][word]
+        print user, "\t", word, "\t", userIndex[user][word]
 
