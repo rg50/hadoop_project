@@ -1,11 +1,13 @@
 #!/usr/bin/python
-
-import sys
 from __future__ import division
+import sys
+
 
 user_responses = {}
-answer_count = 0
 user_answer_score = {}
+oldKey = None
+post_auth = None
+count = 0
 
 # Loop around the data
 # It will be in the format key\tval1\tval2
@@ -62,12 +64,9 @@ for user in user_responses:
 # Get a sorted list of users from lowest to highest answer perecentage
 users_sorted = sorted(user_answer_score.iteritems(), key=lambda (k, v): (v[0], k))
 
-# Print output for top 10 users with at least 5 questions asked
+# Print output in order for users with at least 5 questions asked
 print "User", "\t", "Percentage of Questions Answered", "\t", "Questions Asked"
-output_count = 1
-while output_count <= 10:
-    for i in users_sorted:
-        if i[1][1] >= 5:
-            print i[0], "\t", i[1][0], "\t", i[1][1]
-            output_count += 1
+for i in users_sorted:
+    if i[1][1] >= 5:
+        print i[0], "\t", i[1][0], "\t", i[1][1]
 
