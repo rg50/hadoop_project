@@ -7,7 +7,8 @@ userIndex = {}
 
 # Loop around the data
 # It will be in the format key\tval\tval2
-# Where key is the post ID, val is the node type and val2 is the post length
+# Where key is the author_id, val is a word and val2 is the post 
+# associated with that word
 #
 
 for line in sys.stdin:

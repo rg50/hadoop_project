@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 # Data set used is forum_node.tsv and contains post information
-
 # We want four elements from the dataset: the node type, author_id, post_id and
 # the abs_parent_id 
 # For this, we'll output the author_id, node_type and post_id for questions and
