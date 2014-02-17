@@ -4,7 +4,6 @@
 
 # We want three elements from the dataset: the post, the post_id and the author_id
 # For this, we'll output the author_id, each word in the post and the post_id
-
 # We need to write them out to standard output, separated by a tab
 
 import sys
