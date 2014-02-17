@@ -11,6 +11,7 @@ userIndex = {}
 # associated with that word
 #
 
+
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
     if len(data_mapped) != 3:
